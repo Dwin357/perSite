@@ -2,10 +2,9 @@ Rails.application.routes.draw do
   
   root "splash#new"
 
-
-
-  resources :user, only: [:new, :create]
-  resources :session, only: [:new, :create, :delete]
+  resources :post
+  resources :user
+  resources :session
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,10 +1,10 @@
 <h1> Sign Up</h1>
 
-<%= form_for @user do |f| %>
-	<%= render partial: "partials/error_box" %>
-	<%= render partial: "partials/user_form_fields" %>
+<%= form_for :user do |form| %>
+	<%= render partial: "partials/error_box", locals: {user: @user} %>
+	<%= render partial: "partials/user_form_fields", locals: {f: form} %>
 
-<!-- 	<div class="field">
+<div class="field">
 	<%#= f.label :username %>
 	<%#= f.text_field :username %>
 </div>
@@ -15,8 +15,9 @@
 <div class="field">
 	<%#= f.label :password_confirmation %>
 	<%#= f.password_field :password_confirmation %>
-</div> -->
+</div>
+
+<div class="actions"><%= form.submit %></div>
 
 
-	<div class="actions"><%= f.submit %></div>
 <% end %>

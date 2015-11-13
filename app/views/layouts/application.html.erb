@@ -7,11 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div id='container'>
-		<div id='user_header'>
-			<%= link_to "Sign Up", new_user_path %>
-		</div>
-
+	<div id='container'>		
+		<%= render partial: "partials/menue_bar" %>
 		<%= yield %>
 	</div>
 </body>
