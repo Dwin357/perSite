@@ -6,7 +6,11 @@ RSpec.describe User, type: :model do
 	end
 
   it " has a name attribute" do
-  	expect(@user.username).to eq("MyNameString")
+  	expect(@user.username).to eq("Batman")
+  end
+
+  it " has a password" do
+  	expect(@user.password).to_not eq(nil)
   end
 
 

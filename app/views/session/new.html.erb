@@ -1,0 +1,16 @@
+<div class='container'>
+	<h3>You should sign in, yo</h3>
+
+	<%= form_for(:session, url: sessions_path) do |f| %>
+
+      <%= f.label :username %>
+      <%= f.text_field :username %>
+
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+
+      <%= f.submit "Sign in" %>
+  <% end %>
+
+
+</div>

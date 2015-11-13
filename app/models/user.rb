@@ -4,12 +4,16 @@ class User < ActiveRecord::Base
 
 
 	def password
-		@password ||= BCrypt::Password.new(password_hash)
+		@password ||= BCrypt::Password.new(password_digest)
 	end
 
 	def password=(new_password)
 		@password = BCrypt::Password.create(new_password)
 		self.password_digest = @password
+	end
+
+	def authenticate?(pword)
+		password == pword
 	end
 
 
