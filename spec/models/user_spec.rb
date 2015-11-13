@@ -9,9 +9,5 @@ RSpec.describe User, type: :model do
   	expect(@user.username).to eq("MyNameString")
   end
 
-  it " has a password attribute" do
-  	expect(@user.password).to eq("MyPasswordString")
-  end
-
 
 end
