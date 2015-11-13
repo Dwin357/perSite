@@ -1,8 +1,22 @@
 <h1> Sign Up</h1>
 
 <%= form_for @user do |f| %>
-	<%= render_partial: "error_box" %>
-	<%= render_partial: "user_form_fields" %>
+	<%= render partial: "partials/error_box" %>
+	<%= render partial: "partials/user_form_fields" %>
+
+<!-- 	<div class="field">
+	<%#= f.label :username %>
+	<%#= f.text_field :username %>
+</div>
+<div class="field">
+	<%#= f.label :password %>
+	<%#= f.password_field :password %>
+</div>
+<div class="field">
+	<%#= f.label :password_confirmation %>
+	<%#= f.password_field :password_confirmation %>
+</div> -->
+
 
 	<div class="actions"><%= f.submit %></div>
 <% end %>
