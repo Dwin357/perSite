@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   root "splash#new"
 
-
+ # test change
 
 
   resources :user, only: [:new, :create]
