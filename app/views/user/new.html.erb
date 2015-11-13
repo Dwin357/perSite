@@ -1,0 +1,8 @@
+<h1> Sign Up</h1>
+
+<%= form_for @user do |f| %>
+	<%= render_partial: "error_box" %>
+	<%= render_partial: "user_form_fields" %>
+
+	<div class="actions"><%= f.submit %></div>
+<% end %>
