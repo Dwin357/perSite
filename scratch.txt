@@ -2,7 +2,9 @@ So, an idea for code is to make a basic post framework as an initial skeleton
 
 Bigger picture, I imagine a number of features:
 
- - a basic blog posting set up (initially not commentable)
+ 		- a basic blog posting set up (initially not commentable)
+ X - done, needs a bit more test coverage
+
  - a sign in requirement to author / edit posts
  - a yearbook style profile / bio section
  - a chatroom feature running on top of the twitter api

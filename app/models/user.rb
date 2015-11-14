@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
 
 	validates :username, presence: true
 
+	has_many :posts, foreign_key: :author_id
+
 
 	def password
 		@password ||= BCrypt::Password.new(password_digest)

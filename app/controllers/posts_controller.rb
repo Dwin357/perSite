@@ -26,11 +26,11 @@ class PostsController < ApplicationController
 		@post = Post.find_by_id(params[:id])
 	end
 
-	def update
-	end
+	# def update
+	# end
 
-	def destroy
-	end
+	# def destroy
+	# end
 
 	private
 	def post_params
