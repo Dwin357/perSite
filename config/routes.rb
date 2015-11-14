@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root "splashes#new"
 
   resources :posts
-  resources :user
-  resources :session
+  resources :users
+  resources :sessions
 
 end
