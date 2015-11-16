@@ -1,4 +1,6 @@
-<div class='container'>
+	<%= render partial: "partials/tab_text", locals: {text: "Posts"} %>
+
+	<div class='container'>
 	<%= render partial: "partials/error_box", locals: {brokenModel: @post} %>
 	<%= form_for @post do |f| %>
 		<%= f.label :title %>

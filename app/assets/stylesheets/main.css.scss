@@ -1,0 +1,39 @@
+$theme-color: #004c4d;
+$accent-color: #a300cc;
+$contrast-color: #ffb3d9;
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $theme-color;
+	font-family: verdana;
+	font-size: 14px
+}
+
+.menu-list-item{
+	display: inline-block;
+}
+
+#menu-list{
+	padding: 5px;
+	background-color: white;	
+	a {
+		text-decoration: none;
+	}
+}	
+
+.menu-btn{
+	display: block;
+  width: 100px;
+  height: 20px;
+  background: $accent-color;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2px;
+  color: $contrast-color;
+  font-weight: bold;
+}
+
+.container{
+	background-image: image-url('pc_trees_forest.jpg');
+}

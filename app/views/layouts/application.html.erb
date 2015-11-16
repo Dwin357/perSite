@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>PerSite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-	<div id='container'>		
-		<%= render partial: "partials/menue_bar" %>
-		<%= yield %>
-	</div>
-</body>
+
+	<head>
+	  <%= yield :head %>
+	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+	  <%= csrf_meta_tags %>
+	</head>
+
+	<body>
+		<div id='layout'>
+
+			<%= render partial: "partials/menue_bar" %>
+
+			<div id="content-container">
+				<%= yield %>
+			</div>
+
+		</div>
+	</body>
+
 </html>
