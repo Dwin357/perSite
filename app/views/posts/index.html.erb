@@ -1,11 +1,13 @@
-	<%= render partial: "partials/tab_text", locals: {text: "Posts"} %>
+<%= render partial: "partials/tab_text", locals: {text: "Posts"} %>
 
+<%= render partial: "partials/side_bar" %>
 
-<h2 class="section-title">Post index</h2>
+<div id='content-container'>
+	<h2 class="section-title">Post index</h2>
 
-<ul id='post-list'>
-	<% @posts.each do |post| %>
-		<li class='post-title'><%= post.title %></li>
-	<% end %>
-</ul>
-
+	<ul id='post-list'>
+		<% @posts.each do |post| %>
+			<li class='post-title'><%= post.title %></li>
+		<% end %>
+	</ul>
+</div>
