@@ -1,5 +1,6 @@
 <div id='menu-bar'>
 	<ul id='menu-list'>
+		<li class='menu-list-item'><%= link_to "splash", root_path, :class => "menu-btn" %> </li>
 		<li class='menu-list-item'><%= link_to "post index", posts_path, :class => "menu-btn" %></li>
 	
 		<% if logged_in? %>
