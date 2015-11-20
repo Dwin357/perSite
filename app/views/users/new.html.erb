@@ -1,12 +1,13 @@
 	<%= render partial: "partials/tab_text", locals: {text: "Sign Up"} %>
 
-<h1> Sign Up</h1>
+<div class='container'>
+	<h1> Sign Up</h1>
 
-	<%= render partial: "partials/error_box", locals: {brokenModel: @user} %>
-	
-<%= form_for @user do |form| %>
-	<%= render partial: "partials/user_form_fields", locals: {f: form} %>
-	<div class="actions"><%= form.submit %></div>
-<% end %>
-
+		<%= render partial: "partials/error_box", locals: {brokenModel: @user} %>
+		
+	<%= form_for @user do |form| %>
+		<%= render partial: "partials/user_form_fields", locals: {f: form} %>
+		<div class="actions"><%= form.submit %></div>
+	<% end %>
+</div>
 <%= image_tag 'pc_trees_forest.jpg' %>

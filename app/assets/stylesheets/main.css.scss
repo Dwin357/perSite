@@ -2,41 +2,27 @@ $theme-color: #004c4d;
 $accent-color: #a300cc;
 $contrast-color: #ffb3d9;
 
-#layout{
-	position: relative;
-}
-
-#content-container{
-	position: absolute;	
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 
 
+.container{
+	border-style: dotted;
+	border-width: 1px;
+	width: 60%;
+	margin: auto;
+	padding: 10px;
 }
 
 #menu-bar{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 5em;
-	width: 100%;
-	background-color: green;
+
 }
 
 .side-bar{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 5em;
-	background-color: blue;
-	padding: 0;
+
 }
 
 #menu-list{
-
+	margin: right;
+	padding-right: 30px;
 }	
 
 .menu-list-item{
