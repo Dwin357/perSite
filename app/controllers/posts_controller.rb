@@ -14,7 +14,7 @@ class PostsController < ApplicationController
 		if @post.save
 			redirect_to post_path(@post)
 		else
-			@errors = @post.errors.full_messages
+			# @errors = @post.errors.full_messages
 			render "new"
 		end
 	end
@@ -30,8 +30,11 @@ class PostsController < ApplicationController
 	# def update
 	# end
 
-	# def destroy
-	# end
+	def destroy
+		post = current_user.posts.find_by_id(params[:id])
+		post.destroy if post
+		redirect_to posts_path
+	end
 
 	private
 	def post_params

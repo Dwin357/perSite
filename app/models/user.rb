@@ -1,7 +1,9 @@
 class User < ActiveRecord::Base
 
 	validates :username, presence: true, uniqueness: true
+
 	has_many :posts, foreign_key: :author_id
+	has_many :paintings, foreign_key: :owner_id
 
 
 	def password

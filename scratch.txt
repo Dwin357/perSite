@@ -1,3 +1,12 @@
+12/30/15::0940 - outstanding issues
+
+getting distracted, need to identify key issues and work them individually.
+  - getting the image gallary working
+  - getting the testing suit working
+
+  images first
+=======================================
+
 So, an idea for code is to make a basic post framework as an initial skeleton
 
 Bigger picture, I imagine a number of features:
