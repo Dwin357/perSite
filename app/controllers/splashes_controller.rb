@@ -6,6 +6,9 @@ class SplashesController < ApplicationController
 	def new
 	end
 
+	def secret
+	end
+
 	# def create
 	# end
 

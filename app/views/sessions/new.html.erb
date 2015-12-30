@@ -1,19 +1,10 @@
-<%= render partial: "partials/tab_text", locals: {text: "Log In"} %>
-<%= render partial: "partials/menue_bar" %>
+<%= render partial: "sharedPartials/tab_text", locals: {text: "Log In"} %>
+<%= render partial: "sharedPartials/menue_bar" %>
 
 <div class='container'>
 	<h3>You should sign in, yo</h3>
 
-	<%= form_for(:session) do |f| %>
-
-      <%= f.label :username %>
-      <%= f.text_field :username %>
-
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.submit "Sign in" %>
-  <% end %>
+  <%= render partial: "login_form" %>
 
 
 </div>

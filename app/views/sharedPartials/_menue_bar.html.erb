@@ -10,10 +10,10 @@
 		
 		<% if !logged_in? %>
 			<li class='menu-list-item'><%= link_to "new user", new_user_path, :class => "menu-btn" %></li>
-			<li class='menu-list-item'><%= link_to "new session", new_session_path, :class => "menu-btn" %></li>
+			<li class='menu-list-item'><%= link_to "new session", login_path, :class => "menu-btn" %></li>
 		<% end %>
 		<% if logged_in? %>
-			<li class='menu-list-item'><%= link_to "log out", session_path, method: :delete, :class => "menu-btn" %></li>
+			<li class='menu-list-item'><%= link_to "log out", logout_path, method: :delete, :class => "menu-btn" %></li>
 		<% end %>
 
 

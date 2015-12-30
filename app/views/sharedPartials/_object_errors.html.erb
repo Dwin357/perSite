@@ -1,0 +1,3 @@
+<% if brokenObject.errors.any? %>
+  <%= render partial: "sharedPartials/error_box", locals: {errors: brokenObject.errors.full_messages} %>
+<% end %>

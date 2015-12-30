@@ -1,16 +1,11 @@
-<%= render partial: "partials/tab_text", locals: {text: "Posts"} %>
+<%= render partial: "sharedPartials/tab_text", locals: {text: "Posts"} %>
 
-<%= render partial: "partials/menue_bar" %>
+<%= render partial: "sharedPartials/menue_bar" %>
 
 	<div class='container'>
-	<%= render partial: "partials/error_box", locals: {brokenModel: @post} %>
-	<%= form_for @post do |f| %>
-		<%= f.label :title %>
-		<%= f.text_field :title %>
-		<br>
-		<%= f.label :body %>
-		<%= f.text_area :body %>
-		<br>
-		<%= f.submit "post" %>
+	<%= render partial: "sharedPartials/object_errors", locals: {brokenObject: @post} %>
+	<%= form_for @post do |form| %>
+		<%= render partial: "post_form_fields", locals: {f: form} %>
+		<%= form.submit "edit" %>
 	<% end %>
 </div>

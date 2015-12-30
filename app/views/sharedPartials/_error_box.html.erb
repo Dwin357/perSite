@@ -1,7 +1,7 @@
-<% if brokenModel.errors.any? %>
+<% if errors && errors.any? %>
 	<div class="error_box">
 		<ul>
-			<% brokenModel.errors.full_messages.each do |error| %>
+			<% errors.each do |error| %>
 				<li><%= error %> </li>
 			<% end %>
 		</ul>
