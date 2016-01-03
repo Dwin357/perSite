@@ -1,8 +1,19 @@
 $theme-color: #004c4d;
 $accent-color: #a300cc;
 $contrast-color: #ffb3d9;
+$fairy-tale-color: #005580;
 
-
+@font-face {
+    font-family: 'kramerregular';
+    src: url("./fonts/kramer-webfont.eot");
+    src: url("./fonts/kramer-webfont.eot?#iefix") format('embedded-opentype'),
+         url("./fonts/kramer-webfont.woff2") format('woff2'),
+         url("./fonts/kramer-webfont.woff") format('woff'),
+         url("./fonts/kramer-webfont.ttf") format('truetype'),
+         url("./fonts/kramer-webfont.svg#kramerregular") format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .container{
 	border-style: dotted;
@@ -14,6 +25,31 @@ $contrast-color: #ffb3d9;
 
 #menu-bar{
 
+}
+
+ 
+#splash-container{
+  background: $fairy-tale-color;
+
+  p {
+     font-family: kramerregular;
+     color: black;
+  }
+  a {
+    text-decoration: none;
+    }
+  a:link { color: black; }
+  a:visited { color: black; }
+  a:hover { color: black; }
+  a:focus { color: black; }
+  a:active { color: black; }
+
+  img {
+
+  }
+  .lead-character{
+    font-size: 200%;
+  }
 }
 
 .side-bar{

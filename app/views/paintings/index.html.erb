@@ -1,0 +1,13 @@
+<%= render partial: "sharedPartials/tab_text", locals: {text: "Gallary"} %>
+
+<%= render partial: "sharedPartials/menue_bar" %>
+
+<div class='container'>
+  <h2 class="section-title">Paintings index</h2>
+
+  <ul id='painting-list'>
+    <% @paintings.each do |painting| %>
+      <li class='painting-title'><%= link_to "#{painting.title}", painting %></li>
+    <% end %>
+  </ul>
+</div>
