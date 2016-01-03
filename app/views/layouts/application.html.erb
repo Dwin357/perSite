@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 	<head>
 	  <%= yield :head %>
 	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
@@ -9,13 +8,10 @@
 	</head>
 
 	<body>
-		
-
-
-
-				<%= yield %>
-
-
+		<div id='default-page-layout'>
+			<%= render partial: "sharedPartials/menue_bar" %>
+			<%= yield %>
+		</div>
 	</body>
 
 </html>

@@ -1,7 +1,5 @@
 <%= render partial: "sharedPartials/tab_text", locals: {text: "Posts"} %>
 
-<%= render partial: "sharedPartials/menue_bar" %>
-
 <div class='container'>
   <h3><%= @post.title %></h3>
   <p>by <%=@post.author.username%></p>
