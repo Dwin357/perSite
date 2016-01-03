@@ -28,7 +28,7 @@ class PaintingsController < ApplicationController
   end
 
   def index
-    @painting = Painting.all
+    @paintings = Painting.all
   end
 
   private
