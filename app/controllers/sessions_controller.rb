@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
 		user = User.find_by(username: params[:session][:username])
 		if user && user.authenticate?(params[:session][:password])
 			log_in user
-			redirect_to secret_path
+			redirect_to courtyard_path
 		else
 			@errors = ["Bad username - password combination"]
 			render 'new'

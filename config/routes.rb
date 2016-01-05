@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   
-  root "splashes#new"
-  get "secret" => "splashes#secret"
+  root "castles#road"
+
+  get "courtyard" => "castles#courtyard"
 
 
   get 'login' => "sessions#new"

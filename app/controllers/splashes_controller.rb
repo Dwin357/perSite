@@ -1,13 +1,13 @@
-class SplashesController < ApplicationController
-	layout "splash"
+class CastlesController < ApplicationController
+	layout "castle"
 
 	# def index
 	# end
 
-	def new
+	def road
 	end
 
-	def secret
+	def courtyard
 	end
 
 	# def create
