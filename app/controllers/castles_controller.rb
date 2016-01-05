@@ -10,8 +10,8 @@ class CastlesController < ApplicationController
 	def courtyard
 	end
 
-	# def create
-	# end
+	def gameRoom
+	end
 
 	# def show
 	# end
