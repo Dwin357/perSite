@@ -28,30 +28,66 @@ $book-ink-color: #b2b300;
          url('./fonts/plain_germanica/plain_germanica-webfont.svg#plaingermanicaregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 
-body {
-  margin: 0;
-}
 
+/* ***************utility*************** */
 .container{
-	border-style: dotted;
-	border-width: 1px;
-	width: 60%;
-	margin: auto;
-	padding: 10px;
+  border-style: dotted;
+  border-width: 1px;
+  width: 60%;
+  margin: auto;
+  padding: 10px;
 }
 
-#menu-bar{
-}
+
+/* *********************layouts******************* */
+body { margin: 0; }
 
 #splash-page-layout {
   background: $fairy-tale-color;
   position: absolute;
   top: 0px;
   right: 0px;
+  width: 100%;
+  height: 100%;
 }
+
+#default-page-layout{}
+
+
+/* **********navigation************ */
+
+
+#menu-bar{
+}
+
+.side-bar{
+}
+
+#menu-list{
+  margin: right;
+  padding-right: 30px;
+} 
+
+.menu-list-item{
+  display: inline-block;
+  a { text-decoration: none; }
+}
+
+.menu-btn{
+  display: block;
+  width: 100px;
+  height: 20px;
+  background: $accent-color;
+  padding: 10px;
+  text-align: center;
+  border-radius: 2px;
+  color: $contrast-color;
+  font-weight: bold;
+}
+
+/* ***************section***************** */
  
 #splash-book-container{
   background: $dark-leather-book;
@@ -62,34 +98,26 @@ body {
   margin-top: 5em;
   margin-bottom: 5em;
   border-radius: 5px;
-
   .lead-character{
     font-size: 200%;
     font-family: kramerregular;
   }
-
   .book-item{
     margin: 3em;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-
   }
-
   p {
      font-family: plaingermanicaregular;
      color: $book-ink-color;
-  }
-  
-  a {
-    text-decoration: none;
-    }
+  }  
+  a { text-decoration: none;  }
   a:link { color: $book-ink-color; }
   a:visited { color: $book-ink-color; }
   a:hover { color: $book-ink-color; }
   a:focus { color: $book-ink-color; }
   a:active { color: $book-ink-color; }
-
   img {
     display: block;
     margin-left: auto;
@@ -98,33 +126,4 @@ body {
     max-width: 100%;
     height: auto;
   }
-}
-
-
-
-.side-bar{
-}
-
-#menu-list{
-	margin: right;
-	padding-right: 30px;
-}	
-
-.menu-list-item{
-	display: inline-block;
-	a {
-		text-decoration: none;
-	}
-}
-
-.menu-btn{
-	display: block;
-  width: 100px;
-  height: 20px;
-  background: $accent-color;
-  padding: 10px;
-  text-align: center;
-  border-radius: 2px;
-  color: $contrast-color;
-  font-weight: bold;
 }

@@ -1,4 +1,6 @@
-<div class="castle">
+<%= render partial: "sharedPartials/tab_text", locals: {text: "Courtyard"} %>
+
+<div class="container">
   <ul>
     <li><%= link_to "game room", gameRoom_path %></li>
     <li><%= link_to "road", road_path %></li>
