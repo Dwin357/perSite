@@ -23,11 +23,20 @@ class PostsController < ApplicationController
 	end
 
 	def edit
-		@post = current_user.posts.find_by_id(params[:id])
+		@post = Post.find_by_id(params[:id])
+		redirect_to post_path(@post) unless current_user && current_user.owns?(@post)
 	end
 
-	# def update
-	# end
+	def update
+		@post = current_user.posts.find_by_id(params[:id]) if current_user
+		if @post && @post.save
+			redirect_to post_path(@post)
+		else
+			@error_object = @post
+			render "edit"
+		end
+		
+	end
 
 	def destroy
 		post = current_user.posts.find_by_id(params[:id])

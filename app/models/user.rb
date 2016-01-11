@@ -19,5 +19,7 @@ class User < ActiveRecord::Base
 		password == pword
 	end
 
-
+	def owns?(object)
+		id == object.id
+	end
 end

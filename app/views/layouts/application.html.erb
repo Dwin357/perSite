@@ -2,14 +2,15 @@
 <html>
 	<head>
 	  <%= yield :head %>
-	  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
 	  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 	  <%= csrf_meta_tags %>
 	</head>
 
 	<body>
 		<div id='default-page-layout'>
-			<%= render partial: "sharedPartials/menue_bar" %>
+			<%= render partial: "sharedPartials/menu_bar", 
+				locals:{pg: @page || nil, op: @options || []} %>
 			<%= yield %>
 		</div>
 	</body>
